@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #ff8a00;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  width: 6vw;
+  height: 5vw;
+  margin: 0.5rem 0rem;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #00a1a1;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main section.backImage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url(/Pictures/pexels-photo-416676.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section.backImage h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0rem;
+}
+main section.backImage button.start {
+  background-color: #00d4d4;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 90vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+section.secondpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section.secondpage h2 {
+  font-size: 2rem;
+  margin: 2rem 1rem;
+}
+section.secondpage section.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 80vh;
+  color: #00a1a1;
+}
+section.secondpage section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 300px;
+}
+section.secondpage section.cards div.card img {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+  margin: 1rem 0rem;
+}
+section.secondpage section.cards div.card h4 {
+  font-size: 2rem;
+}
+section.secondpage section.cards div.card p {
+  font-size: 1.25rem;
+  margin: 1rem 0rem;
+}
+section.secondpage section.cards div.card a {
+  text-decoration: none;
+  background-color: #00a1a1;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main section.secondpage section.cards div.card img {
+    height: 40vw;
+    width: 40vw;
+  }
+}/*# sourceMappingURL=style.css.map */
